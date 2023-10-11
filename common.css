@@ -1,0 +1,49 @@
+:root {
+  --pfamily: 'fira sans', sans-serif;
+  --red: #dc3545;
+  --gray: #777777;
+  --green: #119744;
+  --text: #555555;
+  --blue: #1494a9;
+  --white: #ffffff;
+  --black: #373f50;
+  --matte-black: #28282B;
+  --chalk: #f5f5f5;
+  --green: #11b76b;
+  --purple: #b12fad;
+  --orange: #eb6214;
+  --yellow: #F2F50B;
+  --body: #ffffff;
+  --border: #e8e8e8;
+  --heading: #39404a;
+  --primary: #088178;
+  --sub-heading: #565765;
+  --green-chalk: #ddffd5;
+  --green-dark: #072f17;
+  --gray-chalk: #cccccc;
+  --intro-bg: #f8fffa;
+  --facebook: #3b5998;
+  --linkedin: #0e76a8;
+  --twitter: #00acee;
+  --google: #E60023;
+  --instagram: #F77737;
+  --bshadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+  --primary-bshadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+  --primary-tshadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  --orange-tshadow: 2px 3px 8px rgba(0, 0, 0, 0.1)
+}
+
+/* scrollbar css start */
+.scroll-bar::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color:  var(--white);
+  border-radius: 4px;
+}
+.scroll-bar::-webkit-scrollbar{
+  width: 5px;
+  background-color: #F5F5F5;
+}
+.scroll-bar::-webkit-scrollbar-thumb{
+  background-color: var(--primary);
+}
+/* scrollbar css end */

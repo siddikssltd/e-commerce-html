@@ -1,0 +1,115 @@
+/*======================================
+		COMMON CSS START
+======================================*/
+body {
+  overflow-x: hidden;
+  color: #1a1a1a;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: var(--pfamily);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+button.btn:focus, 
+button.btn:focus-visible{
+  outline: none;
+  box-shadow: none;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+/*--------- HEADER CSS START ---------*/
+.header{
+  background-color: #F3F3F3;
+}
+.header .exclusive-link {
+  display: inline-block;
+  background: #28282B;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.header .exclusive-link img{
+  width: 20px;
+}
+.header .exclusive-link span{
+
+}
+.header .exclusive-link i{
+
+}
+.header .header-order {
+  display: inline-block;
+  background: #2BB673;
+  color: white;
+  padding: 5px 40px;
+}
+.header .header-order i{
+
+}
+.header .header-order span{
+
+}
+.header .header-country{
+  
+}
+.header .header-country .dropdown {
+  
+}
+.header .header-country button {
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+.header .header-help {
+  color: black;
+  display: inline-block;
+  text-align: center;
+}
+.header .header-help i{
+
+}
+.header .header-help span{
+
+}
+.header .header-auth{
+  color: black;
+  display: inline-block;
+  text-align: center;
+}
+.header .header-auth i{
+
+}
+.header .header-auth span{
+
+}
