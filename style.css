@@ -1,4 +1,4 @@
-/*--------- HEADER CSS START ---------*/
+/*--------- HEADER SECTION ---------*/
 .header{
   background-color: #F3F3F3;
 }
@@ -40,7 +40,7 @@
   text-align: center;
   padding-top: 5px;
 }
-/*---------- NAVBAR ----------*/
+/*---------- NAVBAR SECTION ----------*/
 .navbar-section {
   position: relative;
   padding-top: 20px;
@@ -90,7 +90,6 @@
   font-weight: bold;
   padding-bottom: 25px;
 }
-/* search */
 .navbar-search {
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -191,7 +190,7 @@
   line-height: initial;
   color: #28282B;
 }
-/*----------- NEW ARRIVAL SECTION ------------*/
+/*----------- CATEGORY WISE SECTION ------------*/
 .category-wise{
   margin-top: 80px;
   margin-bottom: 80px;
@@ -239,26 +238,111 @@
 .product-item del{
   color: gray;
 }
-/*----------- PROMO BANNER SECTION ------------*/
-.promo-banner{
+/*----------- ABOUT US SECTION ------------*/
+.about-us{
   margin-bottom: 80px;
 }
-.promo-banner .promo-details .tag img {
+.about-us .tag img {
   width: 50px;
   margin-left: 5px;
   transform: skew(0deg, 3deg);
   margin-top: -8px;
 }
-.promo-banner .promo-details .tag {
+.about-us .tag {
   font-size: 24px;
   font-weight: 600;
   font-family: 'Fjalla One';
 }
-.promo-banner .promo-details .title {
+.about-us .title {
   font-size: 18px;
   font-weight: 500;
 }
-.promo-banner .promo-details .promo-description {
+.about-us .description {
   font-size: 14px;
   margin-top: 15px;
+}
+/*----------- PROMOTIONAL BANNER SECTION ------------*/
+.promo-banner .promo-details {
+  right: 25px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-family: 'Fjalla One';
+}
+.promo-banner .promo-details .topic{
+  color: #28282B;
+  font-size: 18px;
+}
+.promo-banner .promo-details .title {
+  font-size: 40px;
+  color: #2b9c94;
+  font-weight: bold;  
+  margin: 15px 0 7px 0;
+}
+.promo-banner .promo-details .link{
+  color: #28282B;
+}
+/*----------- SERVICES SECTION ------------*/
+.service{
+  margin-top: 10px;
+  background-color: #F3F3F3;
+  padding: 30px 0 35px 0;
+}
+.service .icon{
+    font-size: 22px;
+    color: var(--black);
+}
+.service .title{
+  font-size: 18px; 
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+/*----------- QUICK LINK SECTION ------------*/
+.quick-links{
+  background-color: #58595B;
+  padding: 50px 0 20px 0;
+}
+.quick-links .quick-link-item a{
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+    transition: 300ms;
+}
+.quick-links .quick-link-item a:hover{
+  color: #1dbf73;
+  margin-left: 3px;
+}
+.quick-links .quick-link-item:first-child{
+  margin-bottom: 15px;
+}
+.quick-links .quick-link-item:first-child a{
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.quick-links .quick-link-icon {
+  width: 25px;
+  height: 25px;
+  line-height: 27px;
+  border-radius: 50%;
+  background: #28282B;
+  text-align: center;
+  color: white;
+  margin-right: 5px;
+  font-size: 12px;
+  transition: 300ms;
+  cursor: pointer;
+}
+.quick-links .quick-link-icon:hover{
+  background: var(--primary);
+}
+/*----------- FOOTER SECTION ------------*/
+.footer{
+  background-color: #F3F3F3;  
+  padding: 20px 0 15px 0;
+}
+.footer .copyright{
+  color: gray;
+  opacity: 0.7;
+  margin-top: 5px;
 }
