@@ -168,22 +168,13 @@
   height: 40px;
 }
 /*----------- NEW ARRIVAL SECTION ------------*/
-.new-arrival .highlight-title {
-  color: #cc8119;
-  background-color: #fcf4e9;
-  font-family: INHERIT;
-  text-shadow: 1px 1px #FFF !important;
-  text-align: center;
-  padding: 30px 0;
-  font-size: 30px;
-  font-weight: 600;
-  margin: 10px 0 20px 0;
-  font-family: 'Fjalla One', sans-serif;
-}
 .new-arrival .arrival-item{
   position: relative;
   display: block;
   height: 100%;
+}
+.new-arrival .arrival-item img {
+  border-radius: 2px;
 }
 .new-arrival .arrival-item span {
   position: absolute;
@@ -205,7 +196,7 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
-.category-wise .category-wise-item span {
+.category-wise-item span {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -219,4 +210,55 @@
   height: 75px;
   line-height: 100px;
   font-family: 'Fjalla One', sans-serif;
+}
+/*----------- PRODUCT SECTION ------------*/
+.product{
+  margin-bottom: 80px;
+}
+.product-item{
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 7px 15px 0 rgb(0 0 0 / 13%), 0 1px 4px 0 rgb(0 0 0 / 11%);
+}
+.product-item .product-price {
+  bottom: -10px;
+  text-align: center;
+  width: 83%;
+  background: #FFF;
+  border-radius: 3px;
+  color: #28282B;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.product-item .taka-icon{
+  font-size: 10px;
+  text-decoration: initial;
+}
+.product-item del{
+  color: gray;
+}
+/*----------- PROMO BANNER SECTION ------------*/
+.promo-banner{
+  margin-bottom: 80px;
+}
+.promo-banner .promo-details .tag img {
+  width: 50px;
+  margin-left: 5px;
+  transform: skew(0deg, 3deg);
+  margin-top: -8px;
+}
+.promo-banner .promo-details .tag {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Fjalla One';
+}
+.promo-banner .promo-details .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.promo-banner .promo-details .promo-description {
+  font-size: 14px;
+  margin-top: 15px;
 }
