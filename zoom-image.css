@@ -1,0 +1,60 @@
+
+  .magnify-image-part .magnify-image-show {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+  .magnify-image-part #show-img {
+     width: 400px;
+     height: 400px;
+  }
+  .magnify-image-part .small-img {
+    width: 350px;
+    height: 70px;
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+  .magnify-image-part .small-img .icon-left, .magnify-image-part .small-img .icon-right{
+    width: 12px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+  .magnify-image-part .small-img .icon-left{
+    transform: rotate(180deg)
+  }
+  .magnify-image-part .small-img .icon-right{
+    right: 0;
+  }
+  .magnify-image-part .small-img .icon-left:hover, .magnify-image-part .small-img .icon-right:hover{
+    opacity: .5;
+  }
+  .magnify-image-part .small-container{
+    width: 310px;
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .magnify-image-part .small-container div{
+    width: 800%;
+    position: relative;
+  }
+
+  .magnify-image-part .small-container .show-small-img{
+    width: 70px;
+    height: 70px;
+    margin-right: 6px;
+    cursor: pointer;
+    float: left;
+  }
+  .magnify-image-part .small-container .show-small-img:last-of-type{
+    margin-right: 0;
+  }
