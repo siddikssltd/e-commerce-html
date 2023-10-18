@@ -11,3 +11,137 @@
   margin-bottom: 15px;
   padding-left: 0;
 }
+/* PRODUCT DETAILS AREA */
+.product-details .product-details-content .pricing-meta{
+  margin: 10px 0;
+}
+.product-details .product-details-content .item-name{
+  font-size: 24px;
+  font-family: 'Rajdhani', sans-serif;
+} 
+.product-details .product-details-content .selected-product-sale-price{
+  font-size: 26px;
+  font-weight: bold;
+}
+.product-details .product-details-content .taka-icon {
+  color: gray;
+  font-size: 14px;
+}
+.product-details-content .product-details-quantity .common-cart-btn {
+  position: relative;
+  width: 175px;
+  outline: none;
+  padding: 0 0px;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  text-transform: uppercase;
+  margin-left: 0px;
+  margin-right: 5px;
+  letter-spacing: 1px;
+  color: white;
+  background: var(--primary);
+}
+.product-details-content .product-details-quantity .product-action .qty-minus {
+  border: 1px solid lightgray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.product-details-content .product-details-quantity .product-action .item-quantity {
+  background: var(--primary);
+  text-align: center;
+  color: white;
+  border: none;
+  font-size: 14px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+}
+.product-details-content .product-details-quantity .product-action .qty-plus {
+  border: 1px solid lightgray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+}
+.product-details-content .size-toolbar label {
+  display: inline-block;
+  background-color: #efefef;
+  padding: 10px;
+  font-family: sans-serif, Arial;
+  font-size: 14px;
+  border-radius: 4px;
+  line-height: 10px;
+  cursor: pointer;
+}
+.product-details-content .size-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.product-details-content .size-toolbar input[type="radio"]:checked + label {
+  border: 1px solid #4c4;
+}
+.product-details-content .color-toolbar input[type="radio"]:checked + label {
+  height: 20px !important;
+  line-height: 23px !important;
+  width: 20px !important;
+}
+.product-details-content .color-toolbar label {
+  position: relative;
+  display: inline-block;
+  padding: 14px;
+  font-family: sans-serif, Arial;
+  font-size: 14px;
+  border-radius: 4px;
+  line-height: 10px;
+  cursor: pointer;
+}
+.product-details-content .color-toolbar input[type="radio"]:checked + ::after {
+  content: "\2713";
+  font-weight: 600;
+  color: #ffffff;
+  position: absolute;
+  top: 3px;
+  right: 8px;
+}
+.product-details-content .color-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.product-details-content .product-details-quantity .stock-request-btn {
+  background: #F2F50B;
+  color: #333;
+}
+.product-details-content .product-details-quantity .out-of-stock-btn {
+  background: #dc3545;
+  color: white;
+}
+.product-details-content .product-details-quantity .stock-request-sended-btn {
+  background: #119744;
+  color: #fff;
+}
+.product-details-content .short-description ul li{
+  list-style: disc;
+}
+.product-details-content .short-description{
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
