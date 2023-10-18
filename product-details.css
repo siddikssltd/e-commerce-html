@@ -89,6 +89,7 @@
   border-radius: 4px;
   line-height: 10px;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 .product-details-content .size-toolbar input[type="radio"] {
   opacity: 0;
