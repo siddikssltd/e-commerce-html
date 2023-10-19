@@ -1,10 +1,153 @@
-.shop{
-
-}
 .shop .filter-side{
   background-color: #f8f8f8;
   height: 100vh;
 }
+.shop .filter-side .filter-main{
+  width: 61%;
+  margin: 10px auto 0 auto;
+}
 .shop .product-side{
-
+  margin-top: 10px;
+}
+.shop .product-side .product-breadcrumb{
+  margin-bottom: 7px;
+}
+.shop .product-side .product-breadcrumb .breadcrumb-body{
+  background-color: #495588;
+  color: white;
+  display: inline-block;
+  padding: 0 5px;
+}
+.shop .product-side .product-breadcrumb .arrow-img{
+  margin: 0 1px;
+  width: 14px;
+  display: inline-block;
+}
+.shop .product-side .product-breadcrumb span {
+  font-weight: 300;
+  font-family: system-ui;
+  line-height: initial;
+}
+.shop .product-side .product-breadcrumb .breadcrumb-title{
+  font-weight: 400;
+}
+.shop .product-side .clear-breadcrumb{
+  background-color: #00aeef;
+  cursor: pointer;
+  padding: 0 5px;
+  display: inline-block;
+  color: white;
+  margin-left: 5px;
+}
+.shop .tags .tag-body span {
+  background: #E8E8E8;
+  padding: 0 5px;
+  display: inline-block;
+}
+.shop .tags .tag-body .tag-title{
+  background-color: gray;
+  color: white;
+  font-size: 14px;
+}
+.shop .tags .tag-body .clear-tag{
+  background-color: #00aeef;
+  cursor: pointer;
+  padding: 0 5px;
+  display: inline-block;
+  color: white;
+  margin-left: 5px;
+}
+.product-side .item-card{
+  box-shadow: 0px 0px 5px 3px #efefef;
+  transition: 100ms;
+  margin-bottom: 20px;
+}
+.product-side .item-card:hover {
+  box-shadow: 0px 0px 0px 1px #00BCD4;
+}
+.product-side .item-card .text .item-name {
+  white-space: nowrap;
+  width: 100%;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  white-space: revert;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-weight: 600;
+  padding: 5px 5px 0px 5px;
+}
+.product-side .item-card .text .saved-amount {
+  text-align: center;
+  background: #28282B;
+  color: white;
+  width: 45%;
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 100;
+  font-family: math;
+  padding: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: initial;
+}
+.product-side .item-card .text .price {
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Rajdhani', sans-serif;
+}
+.product-side .item-card .text .price .taka-icon{
+  font-size: 18px;
+}
+.product-side .item-card .text .price del{
+  font-size: 16px;
+  color: red;
+  font-weight: 400;
+  margin-right: 7px;
+}
+.product-side .item-card .text .price del .taka-icon{
+  font-size: 14px;
+}
+.product-side .item-card .text .cart-button {
+  border: 0;
+  width: 100%;
+  background: #28282B;
+  color: white;
+  justify-content: center;
+  padding: 2px 0;
+}
+.product-side .item-card .text .cart-button i{
+  margin-right: 5px;
+  font-size: 15px;
+}
+.product-side .item-card .delivary-tag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: #28282B;
+  color: white;
+  line-height: initial;
+  padding: 3px 5px 2px 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.product-side .item-card .delivary-tag img{
+  width: 16px;
+}
+.product-side .item-card .discount-tag{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background: #f52645;
+  color: white;
+  line-height: initial;
+  padding: 4px 10px;
+  font-size: 12px;
 }

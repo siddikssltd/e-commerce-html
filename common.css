@@ -93,3 +93,108 @@ img{width: 100%;height: 100%;object-fit: contain;vertical-align: middle;}
   cursor: pointer;
 }
 /* HIGHLIGHTED TITLE END */
+
+/* CHECK BOX START */
+.pretty * {
+  box-sizing: border-box
+}
+.pretty {
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+  white-space: nowrap;
+  line-height: 1;
+}
+.pretty input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 1em;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.pretty .state label {
+  position: initial;
+  display: inline-block;
+  font-weight: 400;
+  margin: 0;
+  text-indent: 1.5em;
+  min-width: calc(1em + 2px);
+}
+.pretty.p-default .state label:after {
+  -webkit-transform: scale(.6);
+  -ms-transform: scale(.6);
+  transform: scale(.6);
+}
+.pretty input:checked~.state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+  border-color: #00BCD4;
+}
+.pretty.p-default.p-thick .state label:after, .pretty.p-default.p-thick .state label:before {
+  border-width: calc(1em / 7);
+}
+.pretty.p-default:not(.p-fill) input:checked~.state.p-warning-o label:after {
+  background-color: #00BCD4 !important;
+}
+.pretty.p-default.p-thick .state label:after {
+  -webkit-transform: scale(.6) !important;
+  -ms-transform: scale(.6) !important;
+  transform: scale(.6) !important;
+}
+.pretty .state label:after, .pretty .state label:before {
+  content: '';
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  border: 1px solid transparent;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: calc((0% - (100% - 1em)) - 8%);
+  background-color: transparent;
+}
+.pretty .state label:before {
+  border: 2px solid #00BCD4;
+}
+@-webkit-keyframes pulse {
+  0% {
+      box-shadow: 0 0 0 0 #00BCD4
+  }
+
+  100% {
+      box-shadow: 0 0 0 1.5em rgba(189, 195, 199, 0)
+  }
+}
+
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 0 0 #00BCD4
+  }
+
+  100% {
+      box-shadow: 0 0 0 1.5em rgba(189, 195, 199, 0)
+  }
+}
+.pretty.p-pulse:not(.p-switch) input:checked~.state label:before {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+}
+.level-1.pretty .state label {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #03c6e0;
+  letter-spacing: -0.5px;
+}
+.level-2.pretty{
+  margin-left: 15px;
+}
+.level-3.pretty{
+  margin-left: 30px;
+}
+/* CHECK BOX END */
