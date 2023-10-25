@@ -1,4 +1,22 @@
-//-------- TRIGGER CAROUSEL ---------//
+// ====================================================
+// 				Nav Bar Fixed
+// ====================================================
+$(function(){
+    $(window).scroll(function(){
+        var winTop = $(window).scrollTop();
+        if(winTop >= 30){
+            $("body").addClass("sticky-header");
+        }else{
+            $("body").removeClass("sticky-header");
+        }
+    });
+});
+
+
+
+
+
+//-------- TRIGGER BANNER SLIDER CAROUSEL ---------//
 var $bannerSlider = $('.banner-slider');
 if($bannerSlider.length > 0){
     $bannerSlider.owlCarousel({
@@ -15,10 +33,13 @@ $bannerSlider.owlCarousel().trigger('refresh.owl.carousel');
 
 
 
-//-------- TRIGGER CAROUSEL FOR HIGHLIGHT TYPE ONE --------//
-var $highlightTypeOneProducts =  $('#highlightTypeOneProducts');
-if($highlightTypeOneProducts.length > 0){
-    $highlightTypeOneProducts.on('changed.owl.carousel initialized.owl.carousel', function (event) {
+
+
+
+//-------- DEMO CAROUSEL --------//
+var $demoCarousel =  $('#demoCarousel');
+if($demoCarousel.length > 0){
+    $demoCarousel.on('changed.owl.carousel initialized.owl.carousel', function (event) {
     $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')}).owlCarousel({
         loop: false,
         nav: true,
@@ -45,4 +66,4 @@ if($highlightTypeOneProducts.length > 0){
         }
     });
 }
-$highlightTypeOneProducts.owlCarousel().trigger('refresh.owl.carousel');
+$demoCarousel.owlCarousel().trigger('refresh.owl.carousel');
