@@ -1,13 +1,16 @@
 .shop .filter-side{
   background-color: #f8f8f8;
-  height: 100vh;
+  height: calc( 100vh - 120px );
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
 }
 .shop .filter-side .filter-main{
-  width: 61%;
-  margin: 10px auto 0 auto;
+  margin: 10px 0 0 18%;
 }
 .shop .product-side{
   margin-top: 10px;
+  margin-left: auto;
 }
 .shop .product-side .product-breadcrumb{
   margin-bottom: 7px;
@@ -56,6 +59,16 @@
   display: inline-block;
   color: white;
   margin-left: 5px;
+}
+.shop .level-counter {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  font-size: 11px;
+  background: #E7E7E7;
+  color: #28282b;
+  padding: 2px 4px;
+  border-radius: 10px;
 }
 .product-side .item-card{
   box-shadow: 0px 0px 5px 3px #efefef;
