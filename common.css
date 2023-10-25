@@ -220,11 +220,11 @@ body.sticky-header .menu-sidebar {
   cursor: pointer;
 }
 body.sticky-header .navbar-section .logo {
-  width: 70%;
+  /* width: 70%;
   margin-left: auto;
-  margin-top: 5px;
+  margin-top: 5px; */
 }
-body.sticky-header .mega-menu-dropdown,
+/* body.sticky-header .mega-menu-dropdown, */
 body.sticky-header .header.header-section {
   -moz-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
