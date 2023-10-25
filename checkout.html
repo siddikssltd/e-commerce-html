@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>CHECKOUT</title>
+
+    <link rel="stylesheet" href="owl-carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    
+    <!-------------- HEADER SECTION -------------->
+    <header class="header header-section">
+        <div class="row">
+            <div class="col-lg-6 ps-0">
+                <a class="exclusive-link">
+                    <img src="image/flash.png" alt="">
+                    <span>EXCLUSIVE T-SHIRTS ON SALE | Limited time only</span>  
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </a>
+            </div>
+            <div class="col-lg-2 text-end">
+                <a href="" class="header-order">
+                    <i class="fas fa-truck"></i>
+                    <span>Order Bulk</span>
+                </a>
+            </div>
+            <div class="col-lg-2 ps-0">
+                <div class="dropdown header-country">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Bangladesh
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Dhaka</a></li>
+                      <li><a class="dropdown-item" href="#">Mirpur</a></li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="col-lg-1 d-flex align-items-center">
+                <a href="" class="header-help">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help</span>    
+                </a>
+            </div>
+            <div class="col-lg-1 pe-0 text-center">
+                <a href="" class="header-auth">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>    
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-------------- NAVBAR SECTION -------------->
+    <section class="navbar-section">
+        <div class="row">
+            <!-- <div class="col-lg-1 menu-sidebar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" style="display: none;">
+                <i class="fas fa-bars"></i>
+            </div> -->
+            <div class="col-lg-2 position-relative">
+                <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">
+                    <img src="image/fabrilife.jpg" alt="logo">
+                </div>
+            </div>
+            <div class="col-lg-2">                
+
+                <div class="dropdown-main text-center mega-menu-dropdown">
+                    <a class="nav-link dropdown-toggle d-inline-block" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="row">
+                        <div class="col-lg-2">
+                            <li><a class="dropdown-item" href="#">Child</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>        
+                          </div>
+                          <div class="col-lg-2">
+                            <li><a class="dropdown-item" href="#">Child</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>        
+                          </div>
+                          <div class="col-lg-2">
+                            <li><a class="dropdown-item" href="#">Child</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>        
+                          </div>
+                          <div class="col-lg-2">
+                            <li><a class="dropdown-item" href="#">Child</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>        
+                          </div>
+                          <div class="col-lg-2">
+                            <li><a class="dropdown-item" href="#">Child</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>        
+                          </div>
+                          <div class="col-lg-2">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>        
+                          </div>  
+                      </div>                    
+                    </div>
+                </div>     
+
+            </div>
+            <div class="col-lg-6">
+                <form action="shop.html">
+                    <div class="navbar-search">
+                        <i class="search-icon fas fa-search"></i>
+                        <input type="text" class="search" placeholder="Search by keyword...">
+                        <button class="search-button">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-2">
+                <div class="row" style="line-height: 35px;">
+                    <div class="col-lg-6">
+                        <div class="wish-icon d-inline-block">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cart-icon d-inline-block position-relative">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="cart-count position-absolute">7</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-------------- CHECKOUT SECTION -------------->
+    <section class="checkout">
+        <div class="container p-0">
+      
+            <div class="row">
+                <div class="col-lg-6 customer-info mb-4 ps-0">
+                    
+                    <div class="row">
+
+                        <div class="checkout-info my-4">Checkout Info</div>
+
+                        <label for=""><b>Contact Info</b></label>
+                        <div class="col-lg-12 my-2">
+                            <input type="text" name="" class="form-control" placeholder="Enter Name">
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <input type="email" name="" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <input type="number" name="" class="form-control" placeholder="Enter Phone">
+                        </div>
+
+
+                        <label for="" class="mt-4"><b>Shipping Info</b></label>
+                        <div class="col-lg-12 my-2">
+                            <input type="text" name="" class="form-control" placeholder="Address">
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <select name="" class="form-control" placeholder="Select District">
+                                <option value="">Select District</option>
+                                <option value="">Dhaka</option>
+                                <option value="">Chittagong</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <select name="" class="form-control" placeholder="Select City">
+                                <option value="">Select Area</option>
+                                <option value="">Dhanmondi</option>
+                                <option value="">Kolabagan</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12 my-2">
+                            <textarea name="" class="form-control" cols="30" rows="5" placeholder="Order Note"></textarea>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6 payment-info pe-0">
+                    <div class="cart-overview">
+                        <div class="checkout-info cart-overview-title my-4">Cart Overview</div>
+                        <div class="cart-items pt-2">  
+                            <div class="row mb-2">
+                                <div class="col-lg-12 product-name">
+                                    Fabrilife Mens Premium Designer Edition Full Sleeve T Shirt (L)
+                                </div>
+                                <div class="col-lg-2 product-img">
+                                    <img src="image/product2.jpg" alt="product img">
+                                </div>
+                                <div class="col-lg-10 product-info ps-0">                                    
+                                    <div class="product-price">
+                                        1 x ৳ 685
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="row mb-2">
+                                <div class="col-lg-12 product-name">
+                                    Fabrilife Mens Premium Designer Edition Full Sleeve T Shirt (M)
+                                </div>
+                                <div class="col-lg-2 product-img">
+                                    <img src="image/product2.jpg" alt="product img">
+                                </div>
+                                <div class="col-lg-10 product-info ps-0">                                    
+                                    <div class="product-price">
+                                        2 x ৳ 685
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <!----------------- CUPPON / PROMO SECTION ------------------>
+                    <div class="card border-0 box-shadow mt-4 coupon-card">
+                        <div class="card-body">
+                            <p class="font-size-sm text-muted mb-1">Have any promo code?</p>
+                            <form id="couponForm" action="javascript:void(0)" method="POST">
+                                <div class="floating-label input-group" id="promo_body">
+                                    <input type="text" class="form-control" name="promo_code" id="checkout_cuppon_code" placeholder="Promo code" value="" style=" text-transform: initial !important;">
+    
+                                    <div class="input-group-append">
+                                        <button class="apply-btn btn-sm btn-dark" style="border-color: transparent !important; font-size: 12px !important; font-weight: bold; text-transform: initial !important;">
+                                            Apply
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <span id="couponMessage"></span>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="mt-2" style="background: #f8f8f8; padding: 15px;border-radius: 4px; margin: 13px;">
+                        <div style="text-align:center;">
+
+                            <span>Your total payable amount is</span>
+
+                            <div class="grand-total"><span class="taka-icon">৳</span> 1375</div>
+                            
+                            <table class="table table-sm table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Purpose</th>
+                                        <th class="text-center">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:center;">Total</td>
+                                        <td class="mb-adjusted" style="text-align:center; color:#12b569;">৳1315</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;">Shipping</td>
+                                        <td class="mb-shipping" style="text-align:center; color:#12b569;">৳60</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;">Discount</td>
+                                        <td class="mb-referral-discount" style="text-align:center; color:red;">৳50</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;">Discount (Coupon)</td>
+                                        <td class="mb-referral-discount" style="text-align:center; color:red;">৳25</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div style="text-align:center;">
+                                <span>You will get the delivery </span>
+                                <span class="mb-shipment" style="color:#12b569; font-weight:bold;">within 2-3 Days</span>
+                                 <span>after confirmation.</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <label class="agree-terms mt-4">
+                        <span class="checkbox" style="height: 21px;">
+                            <input name="" type="checkbox"/>
+                        </span> 
+                        <span class="ms-2 line-height-initial">I agree to Terms & Conditions and Privacy Policy of Ecommerce.</span> 
+                    </label>
+
+
+                    <div class="confirm-order text-center mt-2 mb-4">
+                        <button class="btn btn-info text-white">
+                            <img src="image/shopping-bag.png" alt="shopping-bag" style="display: inline-block; width: 22px;">
+                            <span>Place Order</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+
+      
+
+
+    <!-------------- SERVICE SECTION -------------->
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <div class="icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="title">All secure payment methods</div>
+                    <div class="description">
+                        <img src="image/sslcommerz.png" alt="payment">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="title">All secure payment methods</div>
+                    <div class="description">
+                        <span>Made with premium quality materials.</span>
+                        <div><b>Cozy yet lasts the test of time</b></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="title">All secure payment methods</div>
+                    <div class="description">
+                        <img src="image/delivery.png" alt="payment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-------------- QUICK LINKS SECTION -------------->
+    <section class="quick-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="p-0">
+                        <li class="quick-link-item"><a href="">HELP</a></li>
+                        <li class="quick-link-item"><a href="">SHORT SLEEVE</a></li>
+                        <li class="quick-link-item"><a href="">LONG SLEEVE</a></li>
+                        <li class="quick-link-item"><a href="">POLO</a></li>
+                        <li class="quick-link-item"><a href="">SHIRT</a></li>
+                        <li class="quick-link-item"><a href="">HOODIE</a></li>
+                        <li class="quick-link-item"><a href="">COMFY TROUSER</a></li>
+                        <div class="d-flex p-0 pt-2">
+                            <a class="quick-link-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a class="quick-link-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a class="quick-link-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a class="quick-link-icon"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="p-0">
+                        <li class="quick-link-item"><a href="">HELP</a></li>
+                        <li class="quick-link-item"><a href="">SHORT SLEEVE</a></li>
+                        <li class="quick-link-item"><a href="">LONG SLEEVE</a></li>
+                        <li class="quick-link-item"><a href="">POLO</a></li>
+                        <li class="quick-link-item"><a href="">SHIRT</a></li>
+                        <li class="quick-link-item"><a href="">HOODIE</a></li>
+                        <li class="quick-link-item"><a href="">COMFY TROUSER</a></li>
+                        <li class="quick-link-item"><a href="">SPORTS TROUSER</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="p-0">
+                        <li class="quick-link-item"><a href="">HELP</a></li>
+                        <li class="quick-link-item"><a href="">SHORT SLEEVE</a></li>
+                        <li class="quick-link-item"><a href="">LONG SLEEVE</a></li>
+                        <li class="quick-link-item"><a href="">POLO</a></li>
+                        <li class="quick-link-item"><a href="">SHIRT</a></li>
+                        <li class="quick-link-item"><a href="">HOODIE</a></li>
+                        <li class="quick-link-item"><a href="">COMFY TROUSER</a></li>
+                        <li class="quick-link-item"><a href="">SPORTS TROUSER</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="p-0">
+                        <li class="quick-link-item"><a href="">HELP</a></li>
+                        <li class="quick-link-item"><a href="">SHORT SLEEVE</a></li>
+                        <li class="quick-link-item"><a href="">LONG SLEEVE</a></li>
+                        <li class="quick-link-item"><a href="">POLO</a></li>
+                        <li class="quick-link-item"><a href="">SHIRT</a></li>
+                        <li class="quick-link-item"><a href="">HOODIE</a></li>
+                        <li class="quick-link-item"><a href="">COMFY TROUSER</a></li>
+                        <li class="quick-link-item"><a href="">SPORTS TROUSER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-------------- FOOTER SECTION -------------->
+    <footer class="footer text-center">
+        <div class="container">        
+            <div class="description">
+                FABRILIFE prints a huge variety of custom clothing like T-shirts, hoodies and more. Your order is handled daily with a lot of ❤️️ from BANGLADESH!
+            </div>
+            <div class="copyright">
+                Copyright © 2018 Fabrilife Limited. All Right Reserved
+            </div>
+        </div>
+    </footer>
+    
+
+
+    
+    <!--------------- MENU SIDEBAR --------------->
+    <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Categories</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          
+        </div>
+
+    </div> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="owl-carousel.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
