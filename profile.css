@@ -1,0 +1,60 @@
+.customer-profile .navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.customer-profile .navbar-brand img{
+  width: 140px;
+}
+.customer-profile .sidebar-item {
+  display: block;
+  text-align: center;
+  height: 56px;
+  line-height: 56px;
+  cursor: pointer;
+  position: relative; 
+  transition: all 0.2s ease-in-out;
+}
+.customer-profile .sidebar-item:hover .sidebar-text{
+  left: 120%;
+  opacity: 1;
+}
+.customer-profile .sidebar-item i {
+  font-size: 24px;
+  transition: all 0.2s ease-in-out;
+  color: #c8c5c5;
+}
+.customer-profile .sidebar-item:hover i,
+.customer-profile .sidebar-item.active i {
+  color: #1dbf73;
+  font-size: 24px;
+}
+.customer-profile .sidebar-item .sidebar-text {
+  color: #1dbf73;
+  position: absolute;
+  top: 0;
+  left: 105%;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+  font-size: 18px;
+  white-space: nowrap;
+  line-height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.customer-profile .customer-profile-body{
+  
+}
+.customer-profile .customer-sidebar {
+  width: 5%;
+  height: calc( 100vh - 56px );
+  position: fixed;
+  top: 56px;
+  left: 0;
+  z-index: 1;
+}
+.customer-profile .customer-profile-info{
+  width: 95%;
+  margin-left: auto;
+  padding-top: 56px;
+}

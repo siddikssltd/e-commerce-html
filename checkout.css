@@ -43,3 +43,8 @@
 .line-height-initial{
   line-height: initial;
 }
+.checkout .coupon-card .card-body{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 15px;
+}
