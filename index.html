@@ -797,7 +797,7 @@
 
   
   
-  <!--------- SHOPPING CART MODAL --------->
+    <!--------- SHOPPING CART MODAL --------->
     <button class="shopping-cart header-widget up-head-cart up-add-cart" title="Cartlist" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
         <div class="main-header flex">
             <div class="icon">
@@ -812,11 +812,628 @@
   
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            <div class="cart-total">
+                <i class="far fa-shopping-bag"></i>
+                <span>
+                    Total items
+                    (<span class="cart-total-quantity">3</span>)
+                </span>
+            </div>
         </div>
-        <div class="offcanvas-body">
-        <p>Try scrolling the rest of the page to see this option in action.</p>
+        <button type="button" class="close-cart-sidebar text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="image/cancel.png" alt="" style="width: 24px">
+        </button>
+        </div>
+        <div class="offcanvas-body cart-sidebar p-0" style="overflow: initial;">        
+        
+            <ul class="cart-list cart-items" id="style-11">
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+                <li class="cart-item my-cart item-card position-relative">
+
+                    <button class="cart-sidebar-delete position-absolute">
+                        <img src="image/trash-bin.gif" alt="" style="width: 16px">
+                    </button>
+
+                    <a class="cart-media" href="javascript:void(0)">
+                        <img src="image/product2.jpg" alt="product">
+                    </a>
+
+                    <div class="cart-info-group">
+
+                        <div class="cart-info">
+                            <h6>
+                                <a href="javascript:void(0)">
+                                                    J.Cat Sparkling Powder (Gingerbread Sugar)
+                                                 <span style="font-size: 12px"></span></a>
+                            </h6>
+                            <p>
+                                Price -
+                                <span class="item-sale-price cart-single-item-price">
+                                    
+                                                    300.00
+                                                
+                                </span>
+                                BDT / <span class="item-sub-text">4 gm</span>
+                            </p>
+                        </div>
+
+                        <div class="cart-action-group">
+
+                            <div class="product-action update-quantity">
+                                <button class="action-minus-1 qty-minus" title="Quantity Minus">
+                                    <i class="far fa-minus"></i>
+                                </button>
+
+                                <input class="action-input-quantity item-quantity" title="Quantity Number" type="text" name="quantity" value="3" readonly="">
+
+                                <button class="action-plus-1 qty-plus" title="Quantity Plus">
+                                    <i class="far fa-plus"></i>
+                                    <span class="tooltiptext" style="display: none"></span>
+                                </button>
+                            </div>
+
+                            <h6>
+                                <span class="item-total">
+                                    900.00
+                                </span>
+                                BDT
+                            </h6>
+
+                        </div>
+                    </div>
+                </li>             
+            </ul>
+        
+            <div class="cart-footer">
+                <button class="cart-checkout-btn">
+                    <span class="checkout-label text-transform-initial">Proceed to checkout</span>
+                    <span class="checkout-price">
+                        <span class="cart-total-amount">2400</span>
+                        BDT
+                    </span>
+                </button>
+            </div>
+
         </div>
     </div>
 
