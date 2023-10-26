@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>ORDER RETURN!</title>
+
+    <link rel="stylesheet" href="owl-carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    
+    <div class="customer-profile profile-part">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo.png" alt="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown ms-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="display: flex; align-items: center;">
+                            <img src="image/user.gif" alt="" style="width: 12px; margin-right: 5px;">
+                            <span>Jhon Doe</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: -65px;">
+                          <li><a class="dropdown-item" href="#" style="padding: 5px 0; display: inline-block;">Gallery</a></li>
+                          <li><a class="dropdown-item" href="#" style="padding: 5px 0; display: inline-block;">Logout</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <div class="customer-profile-body">
+            <div class="customer-sidebar bg-light">
+                <a class="sidebar-item" href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <div class="sidebar-text">Dashboard</div>
+                </a>
+                <a class="sidebar-item" href="profile.html">
+                    <i class="fas fa-user"></i>
+                    <div class="sidebar-text">Profile</div>
+                </a>
+                
+                <a class="sidebar-item" href="my-order.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <div class="sidebar-text">My Order</div>
+                </a>
+                <a class="sidebar-item active" href="order-return.html">
+                    <i class="fas fa-undo-alt"></i>
+                    <div class="sidebar-text">Order Return</div>
+                </a>
+                <a class="sidebar-item" href="wishlist.html">
+                    <i class="fas fa-heart"></i>
+                    <div class="sidebar-text">Wishlist</div>
+                </a>
+                <a class="sidebar-item" href="product-review.html">
+                    <i class="fas fa-thumbs-up"></i>
+                    <div class="sidebar-text">Product Review</div>
+                </a>
+                <a class="sidebar-item" href="stock-request.html">
+                    <i class="fab fa-stack-exchange"></i>
+                    <div class="sidebar-text">Stock Request</div>
+                </a>
+                <a class="sidebar-item" href="change-passwrod.html">
+                    <i class="fas fa-key"></i>
+                    <div class="sidebar-text">Change Password</div>
+                </a>
+                <a class="sidebar-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <div class="sidebar-text">Logout</div>
+                </a>
+
+            </div>
+            <div class="customer-profile-info">
+                <div class="edit-profile-panel m-auto my-4">
+                    <div class="row mt-4">
+                        <div class="col-lg-12 breadcrumb-col">
+                            <div class="breadcrumb flat">
+                                <a href="index.html">Home</a>
+                                <a href="profile.html">Profile</a>
+                                <a class="active">Order Return</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <table class="table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" width="5%">SL</th>
+                                        <th scope="col" width="15%">Invoice No</th>
+                                        <th scope="col" width="15%">Date</th>
+                                        <th scope="col" width="10%">Total Amount</th>
+                                        <th scope="col" width="10%">Status</th>
+                                        <th scope="col" width="10%">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>20745234</td>
+                                        <td>
+                                            <h6 class="return-date">2050-9-5</h6>
+                                        </td>
+                                        <td>1000</td>
+                                        <td>
+                                            <span class="badge bg-info">Pending</span>
+                                        </td>
+                                        <td>
+
+                                            <div class="dropdown">
+
+                                                <i class="fas fa-ellipsis-h" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></i>                                            
+                                              
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <li>
+                                                        <a class="dropdown-item" href="{{ route('profile.orders.invoice',$item->id) }}" target="_blank">
+                                                            <i class="fas fa-eye" aria-hidden="true"></i> Invoice
+                                                        </a>
+                                                    </li>      
+                                                    <form action="{{ route('profile.order-returns.delete', $item->id) }}" method="POST">
+                                                        
+                                                        <button class="dropdown-item" title="Delete" type="submit">
+                                                            <i class="fas fa-trash"></i> Delete
+                                                        </button>
+                                                    </form>                                            
+                                                </ul>
+
+                                            </div>
+
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>20745234</td>
+                                        <td>
+                                            <h6 class="return-date">2050-9-5</h6>
+                                        </td>
+                                        <td>1000</td>
+                                        <td>
+                                            <span class="badge bg-success">Accepted</span>
+                                        </td>
+                                        <td>
+
+                                            <div class="dropdown">
+
+                                                <i class="fas fa-ellipsis-h" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></i>                                            
+                                              
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <li>
+                                                        <a class="dropdown-item" href="{{ route('profile.orders.invoice',$item->id) }}" target="_blank">
+                                                            <i class="fas fa-eye" aria-hidden="true"></i> Invoice
+                                                        </a>
+                                                    </li>      
+                                                    <form action="{{ route('profile.order-returns.delete', $item->id) }}" method="POST">
+                                                        
+                                                        <button class="dropdown-item" title="Delete" type="submit">
+                                                            <i class="fas fa-trash"></i> Delete
+                                                        </button>
+                                                    </form>                                            
+                                                </ul>
+
+                                            </div>
+
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="owl-carousel.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

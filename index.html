@@ -50,7 +50,7 @@
                 </a>
             </div>
             <div class="col-lg-1 pe-0 text-center">
-                <a href="" class="header-auth">
+                <a href="javascript:void(0)" class="header-auth" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i class="fas fa-sign-in-alt"></i>
                     <span>Login</span>    
                 </a>
@@ -139,9 +139,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="cart-icon d-inline-block position-relative">
+                        <div class="cart-icon d-inline-block position-relative cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                             <i class="fas fa-shopping-cart"></i>
-                            <div class="cart-count position-absolute">7</div>
+                            <div class="cart-count position-absolute">1</div>
                         </div>
                     </div>
                 </div>
@@ -679,6 +679,151 @@
             </div>
         </div>
     </footer>
+
+
+
+  
+  <!--------- AUTHENTICATION MODAL --------->
+  <div class="modal fade auth-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-body p-4 position-relative">
+            <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row">
+                <div class="col-lg-6 login-services">
+
+                    <div class="welcome-note">Welcome to Ecommerce</div>
+                    <div class="login-note">Log in to manage your account.</div>
+
+                    <div class="row services-item mt-4">
+                        <div class="col-lg-2 p-0">
+                            <img src="image/wishlist.webp" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-lg-10 services-item-text">Add product on wishlist.</div>
+                    </div>
+                    <div class="row services-item">
+                        <div class="col-lg-2 p-0">
+                            <img src="image/stock-request.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-lg-10 services-item-text">Request Product and manage them.</div>
+                    </div>
+                    <div class="row services-item">
+                        <div class="col-lg-2 p-0">
+                            <img src="image/product-review.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-lg-10 services-item-text">Review product and view them later.</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-0">                    
+                                                         
+                    <form class="user-form" id="registration-form" action="" method="POST">
+            
+                        <p style="color:red;" id="errorMessage" class=""></p>
+            
+                        <div class="registration-info mt-2">
+
+                            <b class="continue-with-otp">Continue with mobile number & OTP</b>
+            
+                            <div class="form-group d-flex mt-1">
+                                <input type="text" class="form-control country-code" value="+88">
+                                <input type="text" class="form-control phone-number phone-input" name="phone" id="phone" placeholder="Enter mobile number" required>
+                                <p style="color:red;" id="phoneError" style="display: none"></p>
+                            </div>
+            
+                            <div class="form-button">
+                                <button type="button" class="send-otp-btn">Send OTP</button>
+                            </div>
+            
+                        </div>
+            
+            
+                        <input type="hidden" class="form-control" id="otpCodeInputField" placeholder="Enter repeat password">
+            
+                        <div style="text-align: center; display: none; margin-top: -8px !important;" class="verification_code">
+                            <p class="mb-2">We've sent a 4-digit PIN in your phone
+                                <b>+88<span id="otpSentNumber"></span></b></p>
+                            <div class="form-group parent-otp" style="margin-bottom: 15px !important;">
+                                <input type="number" class="form-control phone-number" onkeyup="verifyOtp(this)" id="verification_code_input" value="{{ old('verification_code') }}" autocomplete="off" placeholder="Enter Otp Code" required>
+                                <div class="otp-button">
+                                    <a href="javascrip:void(0)" class="otp-send-button send-otp" id="send-btn" onclick="sendMyOtp()">
+                                        RESEND OTP
+                                    </a>
+                                </div>
+                            </div>
+                            <span id="otp_error" style="font-size: 12px; color: red"></span>
+            
+                            <button type="button" disabled class="btn" style="border: 0px; width: 100%; padding: 10px 0; background-color: #088178; color: white; " readonly>
+                                <span class="verify-loader" style="display: none">
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                </span>
+                                VERIFY
+                                <span class="verify-loader" style="display: none">
+                                    ...
+                                </span>
+                            </button>
+                        </div>
+            
+                    </form>
+
+
+                    <div class="divider">OR</div>
+
+
+
+
+                    <div class="continue-with">
+                        <button class="btn btn-sm btn-light text-black-50 google-button">
+                            <img src="image/google.png" alt="" style="width: 18px;">
+                            <span>Continue With Google</span>
+                        </button>
+                        <button class="btn btn-sm btn-info text-white facebook-button">
+                            <img src="image/facebook.png" alt="" style="width: 18px;">
+                            <span>Continue With Facebook</span>
+                        </button>
+                    </div>
+                    <div class="terms-aggrement">
+                        <p>By signing up for an account you agree to our</p>
+                        <a href="">Terms and Conditions</a>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  
+  <!--------- SHOPPING CART MODAL --------->
+    <button class="shopping-cart header-widget up-head-cart up-add-cart" title="Cartlist" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <div class="main-header flex">
+            <div class="icon">
+                <img src="image/bag (1).png" alt="" style="width: 20px;">
+                <sup class="cart-total-quantity">1</sup>
+            </div>
+            <div class="text">
+                <span style="font-weight: 600; font-size: 10px;">৳</span><small id="cartGrandTotal" style="font-size: 12px;">1000</small>
+            </div>
+        </div>        
+    </button>
+  
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+
+
+
+
+
 
     
 
